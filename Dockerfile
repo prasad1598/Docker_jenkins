@@ -1,6 +1,6 @@
 # get ubuntu flavor
 FROM ubuntu
-RUN apt ubdate -y
+RUN apt update -y
 RUN apt install apache2 -y
 ADD index.html /var/www/html/index.html
 WORKDIR /var/www/html
